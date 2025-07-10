@@ -36,9 +36,9 @@ document.addEventListener("keydown", (event) => {
   state.onInput(event.key);
   if (!state.statefinite && state.targetReached()) {
     // Create html
-    var header = document.createElement("header");
+    let header = document.createElement("header");
     header.setAttribute("id", "laplateforme-header");
-    var content = document.createTextNode("La Plateforme");
+    let content = document.createTextNode("La Plateforme");
     header.append(content);
     document.body.append(header);
   }
