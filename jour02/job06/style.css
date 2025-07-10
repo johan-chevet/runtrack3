@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+#laplateforme-header {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #2ea3f2;
+  padding: 20px;
+  border-bottom: 2px solid #2ea3f2;
+}

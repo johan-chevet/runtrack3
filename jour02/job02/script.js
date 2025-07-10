@@ -5,6 +5,7 @@ function showhide() {
   } else {
     article = document.createElement("article");
     article.innerHTML = "L'important n'est pas la chute, mais l'atterrissage.";
-    document.body.appendChild(article);
+    const main = document.querySelector("main");
+    main.append(article);
   }
 }
