@@ -10,8 +10,8 @@
   </head>
   <body>
     <button id="btn-shuffle">Shuffle</button>
-      <div id="items-placed"></div>
-      <div id="items">
+      <div id="first-box"></div>
+      <div id="second-box">
         <img id="1" src="./img/arc1.webp" alt="image 1">
         <img id="2" src="./img/arc2.webp" alt="image 2">
         <img id="3" src="./img/arc3.webp" alt="image 3">

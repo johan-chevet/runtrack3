@@ -1,13 +1,12 @@
-#items,
-#items-placed {
+#first-box,
+#second-box {
   display: flex;
   border: 2px solid black;
   gap: 3px;
   margin: 10px;
-  width: 31vw;
+  width: 32vw;
   height: 15vw;
 }
-
 
 img {
   /*max-width: 150px;*/
