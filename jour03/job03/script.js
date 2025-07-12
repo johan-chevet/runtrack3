@@ -69,7 +69,7 @@ $(document).ready(function () {
     let inversions = 0;
 
     // Count the number of inversions:
-    // An inversion is when a tile precedes another tile with a smaller number
+    // An inversion is when a tile with a higher number precedes a tile with a lower number
     for (let i = 0; i < gridtmp.length; i++) {
       for (let j = i + 1; j < gridtmp.length; j++) {
         if (gridtmp[i] > gridtmp[j]) {
