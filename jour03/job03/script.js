@@ -58,7 +58,6 @@ $(document).ready(function () {
     // set game over to true and display reset container
     if (isInOrder()) {
       gameover = true;
-      console.log(puzzleGrid);
       $(".reset-container").css("display", "inline").click(reset);
       $("#tile-0").css("background-image", "url('./img/9.png')");
     }
