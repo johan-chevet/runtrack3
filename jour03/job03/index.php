@@ -9,26 +9,22 @@
     <title>Job03</title>
   </head>
   <body>
-    <!-- <div class="test">
-      <img src="./img/1.PNG">
-    </div> -->
-    <table>
-      <tr>
-        <td><img src="./img/1.png" alt="logo"></td>
-        <td><img src="./img/2.png" alt="logo"></td>
-        <td><img src="./img/3.png" alt="logo"></td>
-      </tr>
-      <tr>
-        <td><img src="./img/4.png" alt="logo"></td>
-        <td><img src="./img/5.png" alt="logo"></td>
-        <td><img src="./img/6.png" alt="logo"></td>
-      </tr> 
-      <tr>
-        <td><img src="./img/7.png" alt="logo"></td>
-        <td><img src="./img/8.png" alt="logo"></td>
-        <td></td>
-        <!-- <td><img src="./img/9.png" alt="logo"></td> -->
-      </tr>
-      </table>
+     <div class="game-container">
+        <div class="grid">
+            <div id="tile-1" class="tile">1</div>
+            <div id="tile-2" class="tile">2</div>
+            <div id="tile-3" class="tile">3</div>
+            <div id="tile-4" class="tile">4</div>
+            <div id="tile-5" class="tile">5</div>
+            <div id="tile-6" class="tile">6</div>
+            <div id="tile-7" class="tile">7</div>
+            <div id="tile-8" class="tile">8</div>
+            <div id="tile-0" class="tile"></div>
+        </div>
+        <div class="reset-container">
+            <p id="win">Vous avez gagné</p>
+            <button id="reset-btn">Recommencer</button>
+        </div>
+     </div>
   </body>
   </html>
