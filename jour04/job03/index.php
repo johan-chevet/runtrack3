@@ -19,6 +19,5 @@
       </select>
       <input type="button" id="filter" name="filter" value="filter" onclick="filterPokemon()">
     </form>
-    <!-- <div class="pokemon-list"></div> -->
   </body>
   </html>
