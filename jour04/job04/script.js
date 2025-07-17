@@ -1,6 +1,8 @@
 async function fetchAndDisplayUsers() {
   try {
-    const response = await fetch("./user.php");
+    const response = await fetch(
+      "http://localhost/runtrack3/jour04/job04/user.php"
+    );
     const content = await response.json();
     let tableBody = document.querySelector("tbody");
     tableBody.innerText = "";
