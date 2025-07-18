@@ -15,46 +15,45 @@ async function setPokemonTypes() {
   });
 }
 
-
 function createPokemonCard(pokemon) {
-  const card = document.createElement('div');
-  card.classList.add('pokemon-card');
+  const card = document.createElement("div");
+  card.classList.add("pokemon-card");
 
-  const name = document.createElement('div');
-  name.classList.add('pokemon-name');
-  const names = document.createElement('div');
-  names.classList.add('names');
+  const name = document.createElement("div");
+  name.classList.add("pokemon-name");
+  const names = document.createElement("div");
+  names.classList.add("names");
 
   for ([key, value] of Object.entries(pokemon.name)) {
-    if (key === 'english') {
-      name.innerText = pokemon.name['english'] + ' ' + '(#' + pokemon.id + ')';
+    if (key === "english") {
+      name.innerText = pokemon.name["english"] + " " + "(#" + pokemon.id + ")";
     } else {
-      const otherName = document.createElement('div');
-      const label = document.createElement('span');
-      label.classList.add('label');
-      label.innerText = key + ': ';
+      const otherName = document.createElement("div");
+      const label = document.createElement("span");
+      label.classList.add("label");
+      label.innerText = key + ": ";
       otherName.append(label);
       otherName.append(document.createTextNode(value));
       names.append(otherName);
     }
   }
-  const types = document.createElement('div');
-  types.classList.add('types');
+  const types = document.createElement("div");
+  types.classList.add("types");
   for ([key, value] of Object.entries(pokemon.type)) {
-    const type = document.createElement('span');
-    type.classList.add('type', `type-${value}`);
+    const type = document.createElement("span");
+    type.classList.add("type", `type-${value}`);
     type.innerText = value;
     types.append(type);
   }
 
-  const stats = document.createElement('div');
-  stats.classList.add('stats');
+  const stats = document.createElement("div");
+  stats.classList.add("stats");
   for ([key, value] of Object.entries(pokemon.base)) {
-    const stat = document.createElement('div');
-    stat.classList.add('stat');
-    const label = document.createElement('span');
-    label.classList.add('label');
-    label.innerText = key + ': ';
+    const stat = document.createElement("div");
+    stat.classList.add("stat");
+    const label = document.createElement("span");
+    label.classList.add("label");
+    label.innerText = key + ": ";
     stat.append(label);
     stat.append(document.createTextNode(value));
     stats.append(stat);
@@ -71,7 +70,6 @@ function createPokemonList(data) {
   pokemonList = document.createElement("div");
   pokemonList.setAttribute("id", "pokemon-list");
   data.forEach((pokemon) => {
-    // const elem = parseObjectAndCreateElement(pokemon, "pokemon-card");
     const card = createPokemonCard(pokemon);
     pokemonList.append(card);
   });
@@ -92,7 +90,7 @@ async function filterPokemon() {
     data = [
       ...data.filter((poke) => {
         for (const [_, value] of Object.entries(poke.name)) {
-          if (value.toLowerCase() === name.toLowerCase()) {
+          if (value.toLowerCase().includes(name.toLowerCase())) {
             return true;
           }
         }

@@ -13,6 +13,7 @@ $(document).ready(function () {
         let rainbow = $(itemsPlacedBox.children()[i]);
         if (rainbow.attr("id") != i + 1) {
           inPlace = false;
+          break;
         }
       }
       // Create result elementS
